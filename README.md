@@ -2,12 +2,12 @@
 ## Create a Trusted Proxy from the API Gateway
 ```
 npm install 
-node f5-asg-trust-demo.js --help
+node f5-asg-trust-builder.js --help
 ```
 ## After install the Usage is as follows:
 
 ```
- Usage: node f5-asg-trust-demo.js [options]
+ Usage: node f5-asg-trust-builder.js [options]
 
   Options:
 
@@ -33,7 +33,7 @@ docker run -p 8443:443 -p 8080:80 f5devcentral/f5-api-services-gateway
 You can run:
 
 ```
-node f5-asg-trust-demo.js --bigip-host 192.168.245.1 --bigip-username admin --bigip-password admin --device-group-name app1
+node f5-asg-trust-builder.js --bigip-host 192.168.245.1 --bigip-username admin --bigip-password admin --device-group-name app1
 ```
 
 assuming your BIG-IP is reachable at https://192.168.245.1:443, you can issue trusted signed REST calls, without supplying further credentials, of the form:
